@@ -7,15 +7,18 @@ import { create, deletes, getAll, getCategoryById, update } from "../models/cate
 export const createCategory = async (req,res) => {
     try{
         const {category} = req.body;
-        const categorys = await create({category})
+        const categorys = await create({ category })
+
         return res.status(200).json({
             message:"Category is created",
             data: categorys
         })
+
     }catch(err){
         return res.status(500).json({message:"Internal server error"})
     }
 }
+
 // function update category
 export const updateCategory = async (req,res) => {
     try{

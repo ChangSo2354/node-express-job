@@ -4,7 +4,7 @@ export const create = async (data) => {
     // get data from
     const { category } = data
     try{
-        const query = connection.from('categories').insert({category}).select();
+        const query = connection.from('categories').insert({ category }).select();
         // exeute insert data and get back
         const {data,error} = await query
 

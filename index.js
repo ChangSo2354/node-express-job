@@ -17,7 +17,7 @@ server.use(cors({
 }))
 
 
-server.use("/api", userRoute)
+server.use("/api",userRoute)
 server.use("/api",locationRoute)
 server.use("/api",categoryRoute)
 
