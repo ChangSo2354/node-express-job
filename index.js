@@ -12,7 +12,7 @@ server.use(cookieParser());
 config();
 
 server.use(cors({
-    origin: "http://localhost:5173", // your vue dev server
+    origin: ["http://localhost:5173","https://jobmanagement-vue-express.vercel.app"], // your vue dev server
     credentials: true               // allow cookie
 }))
 
