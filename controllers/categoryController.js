@@ -1,4 +1,4 @@
-import {data} from "react-router-dom"
+
 import { create, deletes, getAll, getCategoryById, update } from "../models/category.js";
 
 // create, getAll, update, delete, getById
