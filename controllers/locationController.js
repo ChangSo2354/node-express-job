@@ -1,4 +1,4 @@
-import { data } from "react-router-dom";
+
 import { createLocation, deleteLocation, getAllLocation, getLocationById, updateLocation } from "../models/location.js";
 
 // function create location
